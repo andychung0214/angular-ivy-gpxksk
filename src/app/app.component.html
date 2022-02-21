@@ -1,0 +1,24 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<hr />
+
+<app-header></app-header>
+
+<h2>內插繫結</h2>
+<p>{{ demoText }}</p>
+<hr />
+
+<h2>屬性繫結</h2>
+<a [href]="href">環資國際連結</a>
+<hr />
+
+<h2>事件繫結</h2>
+<button (click)="changeText()">Change Text</button>
+<hr />
+
+<h2>雙向繫結</h2>
+<input type="text" [(ngModel)]="twoWayText" />
+<div>
+  <label>輸入文字為：{{ twoWayText }}</label>
+  <span>輸入字數長度：{{ twoWayText.length }} </span>
+</div>
